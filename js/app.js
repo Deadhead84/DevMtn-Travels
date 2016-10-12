@@ -8,12 +8,14 @@ angular.module('devmtnTravel', ['ui.router'])
             .state('packages',{
                 url:'/packages',
                 templateUrl: "../views/packages.html",
-                controller: "packagesController"
+                controller: "packagesController",
+                controllerAs: 'vm'
             })
             .state('locations',{
                 url:'/locations',
                 templateUrl: "../views/locations.html",
-                controller: 'locationsController'
+                controller: 'locationsController',
+                controllerAs: 'vm'
             })
             .state('adventurers',{
                 url:'/adventurers',
@@ -26,7 +28,8 @@ angular.module('devmtnTravel', ['ui.router'])
             .state('booked',{
                 url:'/booked/:id',
                 templateUrl: "../views/booked.html",
-                controller: 'bookedController'
+                controller: 'bookedController',
+                controllerAs: 'vm'
             });
 
         $urlRouterProvider

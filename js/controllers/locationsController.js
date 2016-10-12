@@ -1,5 +1,5 @@
-angular.module('devmtnTravel').controller('locationsController', function($scope, $stateParams, mainSrv) {
+angular.module('devmtnTravel').controller('locationsController', function($scope, $state, $stateParams, mainSrv) {
 
 $scope.getLocations = mainSrv.travelInfo;
-
+console.log($stateParams)
 });
