@@ -17,11 +17,11 @@ angular.module('devmtnTravel', ['ui.router'])
                 controller: 'locationsController',
                 controllerAs: 'vm'
             })
-            .state('adventurers',{
+            .state('home.adventurers',{
                 url:'/adventurers',
                 templateUrl: "../views/about-adventurers.html"
             })
-            .state('contact',{
+            .state('home.contact',{
                 url:'/contact',
                 templateUrl: "../views/contact.html"
             })
